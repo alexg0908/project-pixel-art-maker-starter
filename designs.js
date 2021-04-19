@@ -23,4 +23,15 @@ function makeGrid(h, w) {
       $('#cell' + x ).append('<td></td>');
     }
   }
+
+  // add color to cells
+
+  $('td').click(function addColor() {
+    color = $('#colorPicker').val();
+    if ($(this).attr('style')) {
+      $(this).removeAttr('style') // remove color
+    } else {
+      $(this).attr('style', 'background-color:' + color); // add color
+    }
+  })
 }
