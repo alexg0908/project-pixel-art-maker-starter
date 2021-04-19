@@ -19,7 +19,7 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 table {
@@ -28,11 +28,11 @@ table {
 }
 
 tr {
-    height: 20px;
+    height: 25px;
 }
 
 td {
-    width: 20px;
+    width: 25px;
 }
 
 input[type=number] {
