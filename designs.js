@@ -14,8 +14,13 @@ $('#sizePicker').submit(function (event) {
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
-
-// Your code goes here!
-
+function makeGrid(h, w) {
+  $('tr').remove();
+  // Create pixelCanvas with cells
+  for (var x = 1; x <= h; x++) {
+    $('#pixelCanvas').append('<tr id=cell' + x + '></tr>');
+    for (var y = 1; y <= w; y++) {
+      $('#cell' + x ).append('<td></td>');
+    }
+  }
 }
